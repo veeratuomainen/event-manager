@@ -13,18 +13,18 @@ dotnet add package CsvHelper
 
 After cloning the repository, change into the event-manager directory. The program can now be run using command 'dotnet run' plus wanted parameters. The parameters are listed below. Change the date, categories etc. to do your own testing. The events.csv file contains example data about historical events for testing.
 
-days list -> shows all events in the file__
-days list today -> shows all events with todays date__
-days list --before-date 2020-02-04 -> shows all events before given date__
-days list --after-data 2020-02-04 -> shows all events after given date__
-days list --date 2020-02-04 -> shows all events with given date__
-days list --categories sport,history -> shows all events with given category/categories__
-days list --categories sport --exlude -> shows all events without given category__
-days add --date 2020-02-04 --category sport --description "Football game" -> adds event with given info__
-days add --category sport --description "Football game" -> adds event with given info and todays date__
-days delete --description "Foot" -> deletes events whose description start with given text__
-days delete --date 2020-02-04 -> deletes events with given date__
-days delete --category sport -> deletes events with given category__
-days delete --description "Foot" --date 2020-02-04 --category sport -> deletes events with given date, category and description start__
-days delete --all -> deletes all events__
-days delete --all --dry-run -> tells what would be deleted without deleting, can also be used with other delete commands__
+days list -> shows all events in the file  
+days list today -> shows all events with todays date  
+days list --before-date 2020-02-04 -> shows all events before given date  
+days list --after-data 2020-02-04 -> shows all events after given date  
+days list --date 2020-02-04 -> shows all events with given date  
+days list --categories sport,history -> shows all events with given category/categories  
+days list --categories sport --exlude -> shows all events without given category  
+days add --date 2020-02-04 --category sport --description "Football game" -> adds event with given info  
+days add --category sport --description "Football game" -> adds event with given info and todays date  
+days delete --description "Foot" -> deletes events whose description start with given text  
+days delete --date 2020-02-04 -> deletes events with given date  
+days delete --category sport -> deletes events with given category  
+days delete --description "Foot" --date 2020-02-04 --category sport -> deletes events with given date, category and description start  
+days delete --all -> deletes all events  
+days delete --all --dry-run -> tells what would be deleted without deleting, can also be used with other delete commands
